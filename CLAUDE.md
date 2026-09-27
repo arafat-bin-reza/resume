@@ -9,7 +9,11 @@ Arafat Bin Reza's personal resume, kept in two parallel hand-maintained versions
 - `index.html` — the web version, published via GitHub Pages at https://arafat-bin-reza.github.io/resume/. A single static page with no build step; styling comes from Tailwind CSS 2.2.19 (jsDelivr CDN) utility classes and icons from Font Awesome 6.6.0 (cdnjs). The profile photo is loaded from a Cloudinary URL.
 - `resume.tex` → `resume.pdf` — the printable version. `resume.pdf` is committed, so rebuild it and commit it along with any `.tex` change.
 
-**Keep the two in sync.** A content change (job bullets, skills, dates, projects, and so on) normally has to go into both files. They have the same sections in the same order: Career Summary, Experience, Education, Skills, Certifications, Projects, Training, Languages, Reference. Languages is commented out in `resume.tex`.
+**Keep the two in sync.** A content change (job bullets, skills, dates, projects, and so on) normally has to go into both files. They have the same sections in the same order: Career Summary, Experience, Education, Skills, Certifications, Projects, Training, Languages, Reference. Languages is commented out in both files.
+
+`index.html` is usually the file that gets edited first, and an editor formatter sometimes rewraps its lines. To see only the content that changed, run `git diff -w --word-diff index.html`.
+
+Work is committed straight to `main`, and pushing to `main` updates the live GitHub Pages site.
 
 ## LaTeX structure
 
